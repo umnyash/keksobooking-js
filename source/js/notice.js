@@ -8,7 +8,7 @@ const noticeTemplates = {
 let activeNotice = null;
 
 const onNoticeEscapeKeydown = (evt) => {
-  if (isEscapeEvent) {
+  if (isEscapeEvent(evt)) {
     evt.preventDefault();
     removeNotice();
   }
